@@ -2,7 +2,7 @@
 
 ## 📌 Project Title
 
-**Home Lab Infrastructure for Skills Development & Portfolio Showcase**
+Home Lab Infrastructure for Skills Development & Portfolio Showcase
 
 ## 📚 Table of Contents
 
@@ -24,34 +24,34 @@ This project is a comprehensive home lab built to sharpen infrastructure, networ
 
 ## 🏗️ Architecture
 
-- Physical host running Proxmox VE
-- Multiple Linux VMs (e.g., DNS, app containers)
-- DHCP environment
-- Local DNS resolution using dnsmasq
+- Physical host running Proxmox VE  
+- Multiple Linux VMs (e.g., DNS, app containers)  
+- DHCP environment  
+- Local DNS resolution using dnsmasq  
 - SSH key-based authentication (ED25519)
 
 ## ✅ Features
 
-- Proxmox hypervisor with GUI and CLI access
-- Wake-on-LAN setup for energy efficiency
-- Static DHCP leases and hostname resolution
-- Local DNS with dnsmasq
-- SSH hardened with key authentication only
+- Proxmox hypervisor with GUI and CLI access  
+- Wake-on-LAN setup for energy efficiency  
+- Static DHCP leases and hostname resolution  
+- Local DNS with dnsmasq  
+- SSH hardened with key authentication only  
 - Git Bash on Windows for SSH and remote management
 
 ## 🛠️ Installation
 
-1. Set up Proxmox on bare metal
-2. Configure VMs with static IPs and hostnames
-3. Set up dnsmasq for DNS
-4. Disable root SSH, set up sudo user
-5. Generate SSH keys and copy with ssh-copy-id
+1. Set up Proxmox on bare metal  
+2. Configure VMs with static IPs and hostnames  
+3. Set up dnsmasq for DNS  
+4. Disable root SSH, set up sudo user  
+5. Generate SSH keys and copy with ssh-copy-id  
 6. Install Git and configure terminal environment
 
 ## 🚀 Usage
 
-- SSH into VMs: `ssh user@vm-name.local`
-- Start Proxmox via Wake-on-LAN from another machine
+- SSH into VMs: `ssh user@vm-name.local`  
+- Start Proxmox via Wake-on-LAN from another machine  
 - Use Git Bash or PowerShell for terminal work
 
 ## 📸 Screenshots / Diagrams
@@ -60,22 +60,22 @@ _To be added: Network topology and Proxmox dashboard screenshots_
 
 ## ⚙️ Configuration
 
-- `/etc/ssh/sshd_config`: Root login disabled
-- `/etc/dnsmasq.conf`: Custom DNS entries
-- `~/.ssh/config`: Host shortcuts (optional)
+- `/etc/ssh/sshd_config`: Root login disabled  
+- `/etc/dnsmasq.conf`: Custom DNS entries  
+- `~/.ssh/config`: Host shortcuts (optional)  
 - System environment path configured for Git
 
 ## 🔐 Security
 
-- SSH: ED25519 keys, root login disabled
-- Local-only services, firewall enforced
+- SSH: ED25519 keys, root login disabled  
+- Local-only services, firewall enforced  
 - Limited user accounts with sudo access
 
 ## 🛣️ Todo / Roadmap
 
-- Add Docker containerization
-- Set up CI/CD pipelines
-- Implement monitoring with Prometheus + Grafana
+- Add Docker containerization  
+- Set up CI/CD pipelines  
+- Implement monitoring with Prometheus + Grafana  
 - Automate with Ansible or Terraform
 
 ## 📄 License
@@ -84,4 +84,4 @@ MIT License
 
 ## 👤 Author
 
-Eric — aspiring Solutions Architect
+**Eric** — aspiring Solutions Architect
