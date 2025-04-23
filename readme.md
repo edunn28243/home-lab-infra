@@ -1,112 +1,87 @@
-🏠 Home Lab Infrastructure Project
+# 🏠 Home Lab Infrastructure Project
 
-📌 Project Title
+## 📌 Project Title
 
-Home Lab Infrastructure for Skills Development & Portfolio Showcase
+**Home Lab Infrastructure for Skills Development & Portfolio Showcase**
 
 ## 📚 Table of Contents
 
-- [Overview](#-overview)
-- [Architecture](#-architecture)
-- [Features](#-features)
-- [Installation](#-installation)
-- [Usage](#-usage)
-- [Screenshots / Diagrams](#-screenshots--diagrams)
-- [Configuration](#-configuration)
-- [Security](#-security)
-- [Todo / Roadmap](#-todo--roadmap)
-- [License](#-license)
-- [Author](#-author)
+- [Overview](#overview)
+- [Architecture](#architecture)
+- [Features](#features)
+- [Installation](#installation)
+- [Usage](#usage)
+- [Screenshots / Diagrams](#screenshots--diagrams)
+- [Configuration](#configuration)
+- [Security](#security)
+- [Todo / Roadmap](#todo--roadmap)
+- [License](#license)
+- [Author](#author)
 
-🧩 Overview
+## 🧩 Overview
 
 This project is a comprehensive home lab built to sharpen infrastructure, networking, and automation skills. It serves as a living portfolio for demonstrating cloud-native and systems architecture competencies.
 
-🏗️ Architecture
+## 🏗️ Architecture
 
-Physical host running Proxmox VE
+- Physical host running Proxmox VE
+- Multiple Linux VMs (e.g., DNS, app containers)
+- DHCP environment
+- Local DNS resolution using dnsmasq
+- SSH key-based authentication (ED25519)
 
-Multiple Linux VMs (e.g., DNS, app containers)
+## ✅ Features
 
-DHCP environment
+- Proxmox hypervisor with GUI and CLI access
+- Wake-on-LAN setup for energy efficiency
+- Static DHCP leases and hostname resolution
+- Local DNS with dnsmasq
+- SSH hardened with key authentication only
+- Git Bash on Windows for SSH and remote management
 
-Local DNS resolution using dnsmasq
+## 🛠️ Installation
 
-SSH key-based authentication (ED25519)
+1. Set up Proxmox on bare metal
+2. Configure VMs with static IPs and hostnames
+3. Set up dnsmasq for DNS
+4. Disable root SSH, set up sudo user
+5. Generate SSH keys and copy with ssh-copy-id
+6. Install Git and configure terminal environment
 
-✅ Features
+## 🚀 Usage
 
-Proxmox hypervisor with GUI and CLI access
+- SSH into VMs: `ssh user@vm-name.local`
+- Start Proxmox via Wake-on-LAN from another machine
+- Use Git Bash or PowerShell for terminal work
 
-Wake-on-LAN setup for energy efficiency
+## 📸 Screenshots / Diagrams
 
-Static DHCP leases and hostname resolution
+_To be added: Network topology and Proxmox dashboard screenshots_
 
-Local DNS with dnsmasq
+## ⚙️ Configuration
 
-SSH hardened with key authentication only
+- `/etc/ssh/sshd_config`: Root login disabled
+- `/etc/dnsmasq.conf`: Custom DNS entries
+- `~/.ssh/config`: Host shortcuts (optional)
+- System environment path configured for Git
 
-Git Bash on Windows for SSH and remote management
+## 🔐 Security
 
-🛠️ Installation
+- SSH: ED25519 keys, root login disabled
+- Local-only services, firewall enforced
+- Limited user accounts with sudo access
 
-Set up Proxmox on bare metal
+## 🛣️ Todo / Roadmap
 
-Configure VMs with static IPs and hostnames
+- Add Docker containerization
+- Set up CI/CD pipelines
+- Implement monitoring with Prometheus + Grafana
+- Automate with Ansible or Terraform
 
-Set up dnsmasq for DNS
-
-Disable root SSH, set up sudo user
-
-Generate SSH keys and copy with ssh-copy-id
-
-Install Git and configure terminal environment
-
-🚀 Usage
-
-SSH into VMs: ssh user@vm-name.local
-
-Start Proxmox via Wake-on-LAN from another machine
-
-Use Git Bash or PowerShell for terminal work
-
-📸 Screenshots / Diagrams
-
-To be added: Network topology and Proxmox dashboard screenshots
-
-⚙️ Configuration
-
-/etc/ssh/sshd_config: Root login disabled
-
-/etc/dnsmasq.conf: Custom DNS entries
-
-~/.ssh/config: Host shortcuts (optional)
-
-System environment path configured for Git
-
-🔐 Security
-
-SSH: ED25519 keys, root login disabled
-
-Local-only services, firewall enforced
-
-Limited user accounts with sudo access
-
-🛣️ Todo / Roadmap
-
-Add Docker containerization
-
-Set up CI/CD pipelines
-
-Implement monitoring with Prometheus + Grafana
-
-Automate with Ansible or Terraform
-
-📄 License
+## 📄 License
 
 MIT License
 
-👤 Author
+## 👤 Author
 
 Eric — aspiring Solutions Architect
-
