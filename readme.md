@@ -1,6 +1,6 @@
 # 🏠 Home Lab Infrastructure Project
 
-## 📌 Project Title
+## 📌 Test IT Solution
 
 Home Lab Infrastructure for Skills Development & Portfolio Showcase
 
