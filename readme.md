@@ -4,29 +4,19 @@
 
 Home Lab Infrastructure for Skills Development & Portfolio Showcase
 
-📚 Table of Contents
+## 📚 Table of Contents
 
-Overview
-
-Architecture
-
-Features
-
-Installation
-
-Usage
-
-Screenshots / Diagrams
-
-Configuration
-
-Security
-
-Todo / Roadmap
-
-License
-
-Author
+- [Overview](#-overview)
+- [Architecture](#-architecture)
+- [Features](#-features)
+- [Installation](#-installation)
+- [Usage](#-usage)
+- [Screenshots / Diagrams](#-screenshots--diagrams)
+- [Configuration](#-configuration)
+- [Security](#-security)
+- [Todo / Roadmap](#-todo--roadmap)
+- [License](#-license)
+- [Author](#-author)
 
 🧩 Overview
 
