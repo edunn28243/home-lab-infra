@@ -26,7 +26,6 @@ This project is a comprehensive home lab built to sharpen infrastructure, networ
 
 - Physical host running Proxmox VE  
 - Multiple Linux VMs (e.g., DNS, app containers)  
-- DHCP environment  
 - Local DNS resolution using dnsmasq  
 - SSH key-based authentication (ED25519)
 
