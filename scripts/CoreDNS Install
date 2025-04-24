@@ -1,9 +1,12 @@
 
 sudo apt update
-sudo apt install -y golang git
-cd /opt
-sudo git clone https://github.com/coredns/coredns.git
-cd coredns
-sudo make
+sudo apt install -y golang git #install go, needed for CoreDNS build
 
-sudo cp coredns /usr/local/bin/
+mkdir -p /opt/coredns && cd /opt/coredns
+git clone https://github.com/coredns/coredns .    #Create a directory for the CoreDNS source
+
+go build    #Build the CoreDNS binary
+
+cp coredns /usr/local/bin/    #To make it available globally:
+
+coredns -v  #Check it's working:
