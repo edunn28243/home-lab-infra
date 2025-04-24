@@ -1,0 +1,9 @@
+
+sudo apt update
+sudo apt install -y golang git
+cd /opt
+sudo git clone https://github.com/coredns/coredns.git
+cd coredns
+sudo make
+
+sudo cp coredns /usr/local/bin/
