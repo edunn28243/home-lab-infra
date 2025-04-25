@@ -14,8 +14,7 @@ Home Lab Infrastructure for Skills Development & Portfolio Showcase
 - [Screenshots / Diagrams](#screenshots--diagrams)  
 - [Configuration](#configuration)  
 - [Security](#security)  
-- [Todo / Roadmap](#todo--roadmap)  
-- [License](#license)  
+- [Todo / Roadmap](#todo--roadmap)    
 - [Author](#author)
 
 ## Overview
@@ -36,7 +35,8 @@ This project is a comprehensive home lab built to sharpen infrastructure, networ
 - Static DHCP leases and hostname resolution  
 - Local DNS with dnsmasq  
 - SSH hardened with key authentication only  
-- Git Bash on Windows for SSH and remote management
+- Git Bash on Windows management machine for SSH and remote management
+
 
 ## Installation
 
@@ -45,7 +45,7 @@ This project is a comprehensive home lab built to sharpen infrastructure, networ
 3. Set up dnsmasq for DNS  
 4. Disable root SSH, set up sudo user  
 5. Generate SSH keys and copy with `ssh-copy-id`  
-6. Install Git and configure terminal environment
+6. Install Git and configure terminal environment   
 
 ## Usage
 
@@ -72,14 +72,12 @@ _To be added: Network topology and Proxmox dashboard screenshots._
 
 ## Todo / Roadmap
 
-- Add Docker containerization  
+- Add Docker containerization for web services
+- Establish identity management for centralized security 
 - Set up CI/CD pipelines  
 - Implement monitoring with Prometheus + Grafana  
 - Automate with Ansible or Terraform
 
-## License
-
-MIT License
 
 ## Author
 
