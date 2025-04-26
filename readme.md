@@ -28,8 +28,7 @@ This project is a comprehensive home lab built to sharpen infrastructure, networ
 - Linux VMs
 	- Docker host
 	- Bastion host
-- LXC containers
-	- Ubuntu for CoreDNS
+	- Ubuntu for Samba4
 - SSH key-based authentication (ED25519)  
 
 ## Features
@@ -37,7 +36,7 @@ This project is a comprehensive home lab built to sharpen infrastructure, networ
 - Proxmox hypervisor with GUI and CLI access  
 - Wake-on-LAN setup for energy efficiency  
 - Static DHCP leases and hostname resolution  
-- Local DNS with CoreDNS
+- Local DNS with Samba4
 - SSH hardened with key authentication only  
 - Windows Management Machine
 	- Git Bash
@@ -47,7 +46,7 @@ This project is a comprehensive home lab built to sharpen infrastructure, networ
 
 1. Set up Proxmox on bare metal  
 2. Configure VMs with static IPs and hostnames  
-3. Set up CoreDNS for DNS  
+3. Set up Samba4 for DNS  
 4. Disable root SSH, set up sudo user  
 5. Generate SSH keys and copy with `ssh-copy-id`  
 6. Install Git and configure terminal environment   
@@ -67,7 +66,6 @@ _To be added: Network topology and Proxmox dashboard screenshots._
 ## Configuration
 
 - `/etc/ssh/sshd_config`: Root login disabled  
-- `/etc/CoreDNS.conf`: Custom DNS entries  
 - `~/.ssh/config`: Host shortcuts (optional)  
 - System environment path configured for Git
 
