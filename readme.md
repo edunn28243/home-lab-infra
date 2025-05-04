@@ -84,7 +84,7 @@ _To be added: Network topology and Proxmox dashboard screenshots._
 - Add Docker containerization for web services
 - Establish identity management for centralized security  
 - Auth solution w/ an IDp
-- Deploy Cloudflare account
+- Deploy Cloudflare CDN
 - Integrate w/ AWS dev+prod environments
 - Vulnerability Scanning with Tenable Nessus
 - Implement monitoring with Prometheus + Grafana  
