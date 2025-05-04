@@ -38,9 +38,10 @@ This project is a comprehensive home lab built to sharpen infrastructure, networ
 - Static DHCP leases and hostname resolution  
 - Local DNS with Samba4
 - SSH hardened with key authentication only  
+- Windows VM for RSAT id Management
 - Windows Management Machine
 	- Git Bash
-	- Python, Git paths added to System Environment Variables
+	- Python, Git paths added to System Environment Variables for PowerShell
 
 ## Installation
 
