@@ -29,6 +29,9 @@ This project is a comprehensive home lab built to sharpen infrastructure, networ
 	- Docker host
 	- Bastion host
 	- Ubuntu for Samba4
+- Windows VMs
+	- RSAT (AD tools)
+	- Bastion for Remote Desktop
 - SSH key-based authentication (ED25519)  
 
 ## Features
@@ -38,7 +41,7 @@ This project is a comprehensive home lab built to sharpen infrastructure, networ
 - Static DHCP leases and hostname resolution  
 - Local DNS with Samba4
 - SSH hardened with key authentication only  
-- Windows VM for RSAT id Management
+- RSAT id Management (Active Directory)
 - Windows Management Machine
 	- Git Bash
 	- Python, Git paths added to System Environment Variables for PowerShell
@@ -81,11 +84,13 @@ _To be added: Network topology and Proxmox dashboard screenshots._
 - Add Docker containerization for web services
 - Establish identity management for centralized security  
 - Auth solution w/ an IDp
+- Deploy Cloudflare account
 - Integrate w/ AWS dev+prod environments
 - Vulnerability Scanning with Tenable Nessus
 - Implement monitoring with Prometheus + Grafana  
 - Set up CI/CD pipelines  
-- Automate with Ansible or Terraform
+- Automate with Ansible
+- IAC w/ Terraform
 
 ## Author
 
