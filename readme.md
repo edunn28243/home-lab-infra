@@ -32,16 +32,17 @@ This project is a comprehensive home lab built to sharpen infrastructure, networ
 - Windows VMs
 	- RSAT (AD tools)
 	- Bastion for Remote Desktop
-- SSH key-based authentication (ED25519)  
+- SSH key-based authentication (ED25519)
+- purchased domain: blinkinlights.cc from Cloudflare as registrar
 
 ## Features
 
 - Proxmox hypervisor with GUI and CLI access  
 - Wake-on-LAN setup for energy efficiency  
 - Static DHCP leases and hostname resolution  
-- Local DNS with Samba4
+- Local DNS with Samba4 for Domain Control
 - SSH hardened with key authentication only  
-- RSAT id Management (Active Directory)
+- RSAT ID Management (Active Directory)
 - Windows Management Machine
 	- Git Bash
 	- Python, Git paths added to System Environment Variables for PowerShell
@@ -52,16 +53,21 @@ This project is a comprehensive home lab built to sharpen infrastructure, networ
 2. Configure VMs with static IPs and hostnames  
 3. Set up Samba4 for DNS  
 4. Disable root SSH, set up sudo user  
-5. Generate SSH keys and copy with `ssh-copy-id`  
-6. Install Git and configure terminal environment   
-7. Set up identity management
+5. Generate SSH keys  
+6. Setup local Git repository, configure terminal environments  
+7. Set up identity management  
+8. Generate machine templates for automation  
+9. Purchase blinkinlights.cc domain  
+10. Configure WAF security  
+11. Install RSAT on Windows VM and take a VM snapshot for temporary license renewal  
 
 ## Usage
 
 - SSH into VMs: `ssh user@vm-name.local`  
 - Start Proxmox via Wake-on-LAN from another machine  
 - Use Git Bash or PowerShell for terminal work  
-- Use web interfaces when necessary/advantageous
+- Use web interfaces when necessary/advantageous  
+- Use Powershell and Python for scripting
 
 ## Screenshots / Diagrams
 
@@ -71,7 +77,7 @@ _To be added: Network topology and Proxmox dashboard screenshots._
 
 - `/etc/ssh/sshd_config`: Root login disabled  
 - `~/.ssh/config`: Host shortcuts (optional)  
-- System environment path configured for Git
+- System environment path configured for Git, Python
 
 ## Security
 
