@@ -72,7 +72,7 @@ This project is a comprehensive home lab built to sharpen infrastructure, networ
 
 ## Screenshots / Diagrams
 
-[View Homelab Infrastructure Diagram](drawings/Homelab-Infra.png)
+[![Homelab Infra Diagram](drawings/Homelab-Infra.png)](drawings/Homelab-Infra.png)
 
 ## Configuration
 
