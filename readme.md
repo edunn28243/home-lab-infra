@@ -46,6 +46,7 @@ This project is a comprehensive home lab built to sharpen infrastructure, networ
 - Windows Management Machine
 	- Git Bash
 	- Python, Git paths added to System Environment Variables for PowerShell
+	- SpiceViewer installed for Windows VMs
 
 ## Installation
 
