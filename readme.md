@@ -28,7 +28,7 @@ This project is a comprehensive home lab built to sharpen infrastructure, networ
 - Linux VMs
 	- Docker host
 	- Bastion host
-	- Ubuntu for Samba4
+	- Ubuntu host for Samba4
 - Windows VMs
 	- RSAT (AD tools)
 	- Bastion for Remote Desktop
@@ -72,7 +72,7 @@ This project is a comprehensive home lab built to sharpen infrastructure, networ
 
 ## Screenshots / Diagrams
 
-_To be added: Network topology and Proxmox dashboard screenshots._
+[View Homelab Infrastructure Diagram](drawings/Homelab-Infra.png)
 
 ## Configuration
 
