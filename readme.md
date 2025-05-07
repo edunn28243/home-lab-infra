@@ -29,9 +29,10 @@ This project is a comprehensive home lab built to sharpen infrastructure, networ
 	- Docker host
 	- Bastion host
 	- Ubuntu host for Samba4
-- Windows VMs
+- Windows VM
 	- RSAT (AD tools)
 	- Bastion for Remote Desktop
+	- Docker Desktop
 - SSH key-based authentication (ED25519)
 - purchased domain: blinkinlights.cc from Cloudflare as registrar
 
