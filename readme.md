@@ -23,30 +23,32 @@ This project is a comprehensive home lab built to sharpen infrastructure, networ
 
 ## Existing Architecture
 
-- Physical Server host running Proxmox VE  
+- Physical Server host running Proxmox VE Hypervisor  
 - Physical Windows host for management  
-- Linux VMs
-	- Docker host
-	- Bastion host
-	- Ubuntu host for Samba4
-- Windows VM
-	- RSAT (AD tools)
-	- Bastion for Remote Desktop
-	- Docker Desktop
-- SSH key-based authentication (ED25519)
-- purchased domain: blinkinlights.cc from Cloudflare as registrar
+- Linux VMs  
+	- Docker host  
+	- Ubuntu host for Samba4 Domain Controller  
+		- IDM via Active Directory Domain Services (LDAP)  
+		- Local DNS Services  
+		- NTP services  
+- Windows VM  
+	- RSAT (Active Directory front end tools)  
+	- Bastion host for Remote Desktop  
+	- Docker Desktop host  
+- SSH key-based authentication (ED25519)  
+- purchased domain: blinkinlights.cc from Cloudflare as registrar  
 
 ## Features
 
 - Proxmox hypervisor with GUI and CLI access  
 - Wake-on-LAN setup for energy efficiency  
 - Static DHCP leases and hostname resolution  
-- Local DNS with Samba4 for Domain Control
+- Local DNS with Samba4 for Domain Control  
 - SSH hardened with key authentication only  
 - RSAT ID Management (Active Directory)
 - Windows Management Machine
 	- Git Bash
-	- Python, Git paths added to System Environment Variables for PowerShell
+	- Python and Git paths added to System Environment Variables for PowerShell
 	- SpiceViewer installed for Windows VMs
 
 ## Installation
@@ -54,14 +56,16 @@ This project is a comprehensive home lab built to sharpen infrastructure, networ
 1. Set up Proxmox on bare metal  
 2. Configure VMs with static IPs and hostnames  
 3. Set up Samba4 for DNS  
-4. Disable root SSH, set up sudo user  
+4. Disable root SSH, set up sudo users  
 5. Generate SSH keys  
-6. Setup local Git repository, configure terminal environments  
-7. Set up identity management  
+6. Setup local Git repository, configure terminal environments and paths
+7. Set up identity management via Samba4
 8. Generate machine templates for automation  
-9. Purchase blinkinlights.cc domain  
+9. Purchase blinkinlights.cc domain from Cloudflare  
 10. Configure WAF security  
-11. Install RSAT on Windows VM and take a VM snapshot for temporary license renewal  
+11. Install RSAT on Windows VM and take a VM snapshot for easy temporary license renewal  
+12. Set up NTPsec services on Domain Controller  
+13. Sync all systems with NTP services
 
 ## Usage
 
@@ -89,7 +93,6 @@ This project is a comprehensive home lab built to sharpen infrastructure, networ
 
 ## Todo / Roadmap
 
-- Add Docker containerization for web services
 - Establish identity management for centralized security  
 - Auth solution w/ an IDp
 - Deploy Cloudflare CDN
